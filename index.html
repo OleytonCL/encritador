@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ES-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador - Seccion 7 OLM</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main class="main">
+    <!-- logo -->
+    <a class="logo" href="https://app.aluracursos.com/dashboard" target="_blank">
+      <img src="./img/Logo1.png" alt=""><img src="./img/logoAlura.svg" alt="">
+      
+    </a>
+    <!-- Fin Logo-->
+
+    <!-- Menu -->
+    <footer>
+      <a href="index.html" class="footer__texto"> Home</a>
+      <a href="https://www.linkedin.com/in/oscar-leyton/" class="footer__texto">Linkedin</a>
+    
+  </footer>
+  <!--Fin Menu-->
+
+  <!-- Seccion ingresar texto -->
+    <section class="ingreso_datos">
+      <div class="input">
+       <textarea class="input_texto" id="input_texto" type="text" placeholder="Ingrese el texto aqui" onkeypress="return soloLetras(event)"></textarea>
+      </div>
+      <div class="botonera">
+        <div class="mensaje_alert">
+          <img id="circle_alert" src="./img/circle-gray.svg" alt="">
+          <small id="error_message">Solo letras minúsculas y sin acentos</small>
+        </div>
+        <div class="botones">
+          <button id="btn_encriptar" class="btn_encriptar">Encriptar</button>
+          <button id="btn_desencriptar" class="btn_desencriptar">Desencriptar</button>
+        </div>
+      </div>
+    </section>
+    <!--Fin Seccion Ingresar Texto-->
+
+    <!-- Seccion Mensaje Salida -->
+    <section class="salida_respuesta">
+      <div class="inicio" id="inicio">
+        <img src="./img/Muñeco.png" alt="">
+        <h2>Ningún mensaje fue encontrado</h2>
+        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+      </div>
+      <div id="resultado" class="resultado">
+        <p id="textoEncriptado"></p>
+        <div>
+          <small id="message_copiado"></small>
+          <button id="btn_copiar">Copiar</button>
+        </div>
+      </div>
+    <!--Fin Seccion Mensaje Salida-->
+    </section>
+    </main>
+    
+  <script src="./js/app.js"></script>
+</body>
+</html>
